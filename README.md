@@ -36,33 +36,35 @@ Este projeto simula um site fictício da Ford, com foco em apresentar lançament
 ---
 
 ## 📁 Estrutura de Diretórios
+
+```text
 /
-├── index.html # Página inicial com o carousel
-├── lancamento.html # Página com modelos para comparar
-├── contato.html # Página com formulário de contato
+├── index.html                  # Página inicial com o carrossel
+├── lancamento.html             # Página com modelos para comparar
+├── contato.html                # Página com formulário de contato
 ├── js/
-│ ├── carousel.js # Lógica do carrossel de destaques
-│ ├── compare.js # Lógica de comparação de carros
-│ └── form.js # Validação e envio de formulário
+│   ├── carousel.js             # Lógica do carrossel de destaques
+│   ├── compare.js              # Lógica de comparação de carros
+│   └── form.js                 # Validação e envio de formulário
 ├── img/
-│ ├── facebook-50.png
-│ ├── ford-96.png
-│ ├── imagem_1.jpg
-│ |── imagem_2.jpg
-│ ├── imagem_3.jpg
-│ ├── info.png
-│ ├── instagram-logo-50.png
-│ |── logo-ford-256.png
-│ |── storm.jpg
-│ ├── XL Cabine.jpg
-│ ├── xls 2.2 diesel.jpg
-│ ├── youtube-squared-50.png
+│   ├── facebook-50.png
+│   ├── ford-96.png
+│   ├── imagem_1.jpg
+│   ├── imagem_2.jpg
+│   ├── imagem_3.jpg
+│   ├── info.png
+│   ├── instagram-logo-50.png
+│   ├── logo-ford-256.png
+│   ├── storm.jpg
+│   ├── XL Cabine.jpg
+│   ├── xls 2.2 diesel.jpg
+│   └── youtube-squared-50.png
 ├── css/
-│ ├── form.css # Estilo específico do formulário
-│ └── lancamento.css # Estilo específico da página de lançamento
-│ ├── reset.css # Reset de estilo
-│ ├── style.css # Estilização geral
-/
+│   ├── form.css                # Estilo específico do formulário
+│   ├── lancamento.css          # Estilo da página de lançamento
+│   ├── reset.css               # Reset de estilo
+│   └── style.css               # Estilo geral
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
