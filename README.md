@@ -62,7 +62,7 @@ Este projeto simula um site fictício da Ford, com foco em apresentar lançament
 │ └── lancamento.css # Estilo específico da página de lançamento
 │ ├── reset.css # Reset de estilo
 │ ├── style.css # Estilização geral
-
+/
 ---
 
 ## 🛠️ Tecnologias Utilizadas
