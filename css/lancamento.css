@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --cor-primaria: #1351d8;
+    --cor-secundaria: #1b357e;
+    --fonte-principal: "Roboto", sans-serif;
+    --sombra: rgba(10, 38, 197, 0.1);
+    --underline: hsl(239, 83%, 38%);
+    --cor-branco-puro: #FFFFFF;
+    --cor-cinza-claro: #ccc;
+    --cor-cinza-muito-claro: #e7e7e7;
+    --cor-cinza-muito-escuro: #333;
+    --cor-cinza-médio-neutro: #666;
+    --rgba-preto-20-opacidade: rgba(0, 0, 0, 0.2);
+    --rgba-preto-50-opacidade: rgba(0, 0, 0, 0.5);
+    --rgba-preto-80-opacidade: rgba(0, 0, 0, 0.8);
+    --rgba-preto-5-opacidade: rgba(0, 0, 0, 0.05);
+    --rgba-azul-ford-trans: rgba(0, 102, 204, 0.1);
+    --rgb-preto-transparente-34-opacidade: rgb(0 0 0 / 34%)
+}
+
+ul.modelcars {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+ul.modelcars li {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    vertical-align: top;
+}
+
+img.photocar {
+    display: block;
+    width: 250px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+}
+
+.infocar div {
+    display: inline-block;
+}
+
+.info {
+    width: 200px;
+    vertical-align: top;
+}
+
+.textmodel {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: var(--cor-primaria);
+    
+}
+.textprice {
+    display: block;
+    text-align: left;
+    font-size: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 10px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  td:nth-child(1) {  
+    font-weight: 700;
+    width: 40%;
+  }
+
+  tr:nth-child(even) {background-color: var(--cor-branco-puro);}
+
+div#compare {
+    position: absolute;
+    display: none;
+    width: 50vw;
+    max-width: 800px;
+    min-width: 400px;
+    height: 80vh;
+    max-height: 700px;
+    min-height: 350px;
+    background: var(--cor-cinza-claro);
+    top: calc(100vh - 80%);
+    left: 25vw;
+    border-radius: 10px;
+    overflow: auto;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 6px 0px var(--rgb-preto-transparente-34-opacidade);
+    box-shadow: 1px 1px 6px 0px var(--rgb-preto-transparente-34-opacidade);
+}
+
+
+#compare table {
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--cor-branco-puro);
+    border-collapse: collapse;
+}
+
+#compare table td, #compare table th {
+    border: 1px solid var(--cor-cinza-claro);
+    padding: 12px;
+    text-align: left;
+}
+
+#compare table tr:nth-child(even) {
+    background-color: var(--cor-cinza-muito-claro);
+}
+
+#compare table tr:hover {
+    background-color: var(--cor-cinza-claro);
+}
+
+#compare table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco-puro);
+}
+
+/* Estilo para os checkboxes de comparação */
+.checkbox {
+    transform: scale(1.5);
+    margin: 10px;
+}
+
+/* Botão de fechar */
+#compare button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branco-puro);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#compare button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+
