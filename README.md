@@ -65,6 +65,7 @@ Este projeto simula um site fictício da Ford, com foco em apresentar lançament
 │   ├── reset.css               # Reset de estilo
 │   └── style.css               # Estilo geral
 
+```
 ---
 
 ## 🛠️ Tecnologias Utilizadas
