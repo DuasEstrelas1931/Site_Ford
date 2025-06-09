@@ -72,6 +72,10 @@ button {
     cursor: pointer;
 }
 
+#botaoEnviar:disabled {
+  cursor: not-allowed;
+}
+
 .titulo {
     margin-left: 8px;
 }
@@ -134,11 +138,33 @@ button {
   .bot-btn:hover {
     background-color: var(--cor-secundaria);
   }
-  @media (max-width: 650px) {
+
+  .condicao {
+    width: 320px;
+    padding: 16px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .condicao label {
+    display: block;
+    margin-top: 10px;
+  }
+  .condicao a {
+    color: var(--underline);
+    text-decoration: underline;
+  }
+
+  .checkbox {
+    accent-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+  }
+
+  @media (min-device-width: 320px) and  (max-width: 600px)  {
     .bot-helper {
       position: absolute;
-      bottom: -310px;
-      right: 0;
+      bottom: 100px;
+      margin: 13px 200px;
     }
     .bot-icon {
       width: 35px;

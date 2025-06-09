@@ -1,12 +1,11 @@
 class Contato {
-    constructor(nome, sobrenome, email, cpf, telefone, tipoContato) {
+    constructor(nome, sobrenome, email, cpf, telefone, contato) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
         this.cpf = cpf;
         this.telefone = telefone;
-        this.tipoContato = tipoContato;
-        this.dataCadastro = new Date().toLocaleString();
+        this.contato = contato;       
     }
 }
 
@@ -33,6 +32,7 @@ function Post(form) {
     // 4. Feedback e limpeza do formulário
     mostrarFeedback(novoContato.nome);
     form.reset();
+    
 
     return true;
 }
@@ -107,7 +107,7 @@ function mostrarFeedback(nome) {
     document.querySelector('.imagem-animada').classList.add('visible');
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {   
 
   const bntBut = document.getElementById('botHelperBtn');
   if (bntBut) {
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector('input[name="telefone"]').value = exemplo.telefone;
       document.querySelector('select[name="contato"]').value = exemplo.contato;
       
-      // Atualiza o status de validação (se seu sistema tiver)
+      // Atualiza o status de validação 
       if (typeof validateForm === 'function') {
         validateForm();
       }
@@ -140,4 +140,15 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Formulário preenchido com dados de exemplo. Por favor, revise antes de enviar!");
     });
   }
+  
 });
+
+
+const checkbox1 = document.getElementById("checkbox1");
+const botao = document.getElementById("botaoEnviar");
+
+    checkbox1.addEventListener("change", () => {        
+        botao.disabled = !checkbox1.checked;
+});
+
+
