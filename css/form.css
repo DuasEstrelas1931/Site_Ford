@@ -3,6 +3,7 @@
 :root {
   --cor-primaria: #1351d8;
   --cor-secundaria: #1b357e;
+  --cor-vermelho: red;
   --fonte-principal: "Roboto", sans-serif;
   --sombra: rgba(10, 38, 197, 0.1);
   --underline: hsl(239, 83%, 38%);
@@ -170,14 +171,14 @@ button {
 }
 
 .termo-nao-aceito {
-    color: red;
-    border: 1px solid red;
+    color: var(--cor-vermelho);
+    border: 1px solid var(--cor-vermelho);
     padding: 5px;
     border-radius: 4px;
 }
 
 .termo-nao-aceito input[type="checkbox"] {
-    accent-color: red; 
+    accent-color: var(--cor-vermelho); 
 }
 
 @media (max-width: 728px) {
@@ -218,10 +219,10 @@ button {
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 400px) {
 .bot-helper {
-   
+    position: absolute;
     bottom: -295px;
-    margin: 5px 270px;
+    margin: 5px 210px;
   }
 }
