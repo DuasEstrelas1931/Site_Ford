@@ -65,11 +65,13 @@ h2 {
 }
 
 button {
-  width: 200px;
-  height: 40px;
-  margin-right: 8px;
-  float: right;
-  cursor: pointer;
+  display: block;
+  width: 200px; /* Largura fixa */
+  margin: 15px auto; /* Centraliza horizontalmente */
+  padding: 10px;
+  text-align: center;
+  border: none;
+  cursor: pointer;  
 }
 
 .titulo {
@@ -144,7 +146,7 @@ button {
 .condicao {
   width: 320px;
   padding: 16px;
-  margin-top: 20px;
+  margin-top: 10px;
   box-sizing: border-box;
   font-size: 14px;
   background-color: var(--rgba-preto-5-opacidade);
@@ -227,7 +229,7 @@ button {
     width: 110px;
     padding: 5px auto;
     border-radius: 10px;    
-    font-size: 13px;    
+    font-size: 12px;    
   }
 
 }
