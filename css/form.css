@@ -185,33 +185,27 @@ button {
   .condicao {
     margin-top: 40px;
   }
-  .bot-helper {
-    position: absolute;
-    bottom: -50px;
-    margin: 5px 220px;
+ .bot-helper {
+    position: fixed;
+    bottom: 10px;
+    margin-right: auto;
   }
   .bot-icon {
     width: 35px;
     height: 35px;
     margin-bottom: 5px;
     cursor: pointer;
-    transition: transform 0.3s;
+    
   }
 
   .bot-icon:hover {
     transform: scale(1.1);
   }
-  .bot-btn {
-    background-color: var(--cor-primaria);
-    color: var(--cor-branco-puro);
-    border: none;
+  .bot-btn {       
     width: 130px;
     padding: 5px auto;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    box-shadow: 0 2px 5px var(--rgba-preto-20-opacidade);
-    transition: background-color 0.3s;
+    border-radius: 10px;    
+    font-size: 15px;    
   }
 
   .bot-btn:hover {
@@ -221,8 +215,19 @@ button {
 
 @media (max-width: 400px) {
 .bot-helper {
-    position: absolute;
-    bottom: -295px;
-    margin: 5px 210px;
+    position: fixed;
+    bottom: 10px;
+    margin-right: auto;
   }
+  .bot-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .bot-btn {       
+    width: 110px;
+    padding: 5px auto;
+    border-radius: 10px;    
+    font-size: 13px;    
+  }
+
 }
