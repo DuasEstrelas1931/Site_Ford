@@ -185,7 +185,7 @@ button {
 
 @media (max-width: 728px) {
   .condicao {
-    margin-top: 40px;
+    margin-top: 15px;
   }
  .bot-helper {
     position: fixed;
