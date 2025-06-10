@@ -11,12 +11,12 @@ class Contato {
 
 // Função principal que processa o formulário
 function Post(form) {
-    // 1. Validação dos campos antes de prosseguir
+    // Validação dos campos antes de prosseguir
     if (!validarFormulario(form)) {
         return false;
     }
-
-    // 2. Cria o objeto contato com os dados do formulário
+    
+    // Cria o objeto contato com os dados do formulário
     const novoContato = new Contato(
         form.elements.namedItem("nome").value.trim(),
         form.elements.namedItem("sobrenome").value.trim(),
@@ -26,18 +26,16 @@ function Post(form) {
         form.elements.namedItem("contato").value
     );
 
-    // 3. Armazena o contato
+    // Armazena o contato
     armazenarContato(novoContato);
-
-    // 4. Feedback e limpeza do formulário
-    mostrarFeedback(novoContato.nome);
-    form.reset();
-    
+    // Feedback e limpeza do formulário
+    mostrarFeedback(novoContato.nome);   
+    form.reset();    
 
     return true;
 }
 
-// Função de validação completa
+// Função de validação
 function validarFormulario(form) {
     
     const nome = form.elements.namedItem("nome").value.trim();
@@ -100,9 +98,6 @@ function mostrarFeedback(nome) {
     alert(`Obrigado, ${nome}! Seus dados foram cadastrados com sucesso.`);
 }
 
-// Como usar no HTML:
-// <form onsubmit="return processarFormulario(this)">
-
  window.addEventListener('load', () => {
     document.querySelector('.imagem-animada').classList.add('visible');
 });
@@ -120,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Amor", 
         "ricardo.amor@exemplo.com", 
         "123.456.789-09", 
-        "(11) 98765-4321", 
+        "(71) 98765-4321", 
         "TELEFONE"
       );
       
@@ -140,15 +135,21 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Formulário preenchido com dados de exemplo. Por favor, revise antes de enviar!");
     });
   }
+
   
 });
+const inputCheckbox = document.getElementById("checkbox1");
+const botao = document.getElementById("botaoEnviar");  
 
+function atualizarEstado() {
+    const estaMarcado = inputCheckbox.checked;
+    botao.disabled = !estaMarcado;
+    inputCheckbox.parentElement.classList.toggle("termo-nao-aceito", !estaMarcado);
+    botao.classList.toggle("botao-desabilitado", !estaMarcado);
+}
 
-const checkbox1 = document.getElementById("checkbox1");
-const botao = document.getElementById("botaoEnviar");
+// Executa quando o checkbox é alterado
+inputCheckbox.addEventListener("change", atualizarEstado);
 
-    checkbox1.addEventListener("change", () => {        
-        botao.disabled = !checkbox1.checked;
-});
-
-
+// Executa quando a página carrega
+document.addEventListener("DOMContentLoaded", atualizarEstado);
